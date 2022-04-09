@@ -26,8 +26,7 @@ public class Main {
         if (nums.isEmpty()) {
             System.out.println("Список пуст");
         } else {
-            nums.sort(Comparator.naturalOrder());
-            nums = new ArrayList<>(new HashSet<>(nums));
+            nums = new ArrayList<>(new TreeSet<>(nums));
             for (Integer num : nums) {
                 if (num % 2 == 0) {
                     System.out.print(num + " ");
